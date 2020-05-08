@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Portfolio</title>
+    <style>
+      body {
+        background-color: #181719;
+        overflow-x: hidden;
+      }
+      #navbar {
+        background-color: #be3144;
+        left: 0;
+        right: 0;
+        width: 100%;
+        height: 75px;
+        font-size: 24px;
+        position: absolute;
+        top: 0;
+      }
+      #navbar ul {
+        list-style-type: none;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+      }
+      #navbar ul li a {
+        text-decoration: none;
+        color: white;
+        margin: 20px;
+      }
+      h1 {
+        color: #f0f0f0;
+        font-size: 50px;
+      }
+      h3 {
+        color: #be3144;
+        font-size: 30px;
+        font-style: italic;
+      }
+      #welcome-section {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 420px;
+      }
+      #projects {
+        display: grid;
+        grid-column-gap: 50px;
+        grid-row-gap: 50px;
+        width: 100%;
+        left: 0;
+        right: 0;
+        height: 500px;
+        background-color: #45567d;
+      }
+      .project-image {
+        width: 400px;
+        height: 350px;
+      }
+    </style>
+  </head>
+  <body>
+    <section id="welcome-section">
+      <h1>Hey I am Mimic</h1>
+      <h3>a web developer</h3>
+    </section>
+    <section id="projects"></section>
+    <h2>These are some of my projects</h2>
+    <div>
+      <ul>
+        <li class="project-tile">
+          <a href="https://codepen.io/freeCodeCamp/full/zNqgVx" target="_blank"
+            ><img
+              class="project-image"
+              src="https://raw.githubusercontent.com/freeCodeCamp/cdn/master/build/testable-projects-fcc/images/tribute.jpg"
+              alt="project"
+          /></a>
+        </li>
+        <li class="project-tile">
+          <a href="https://codepen.io/freeCodeCamp/full/qRZeGZ" target="_blank"
+            ><img
+              class="project-image"
+              src="https://raw.githubusercontent.com/freeCodeCamp/cdn/master/build/testable-projects-fcc/images/random-quote-machine.png"
+              alt="project"
+          /></a>
+        </li>
+        <li class="project-tile">
+          <a href="https://codepen.io/freeCodeCamp/full/wgGVVX" target="_blank"
+            ><img
+              class="project-image"
+              src="https://raw.githubusercontent.com/freeCodeCamp/cdn/master/build/testable-projects-fcc/images/calc.png"
+              alt="project"
+          /></a>
+        </li>
+        <li class="project-tile">
+          <a href="https://codepen.io/freeCodeCamp/full/mVEJag" target="_blank"
+            ><img
+              class="project-image"
+              src="https://raw.githubusercontent.com/freeCodeCamp/cdn/master/build/testable-projects-fcc/images/map.jpg"
+              alt="project"
+          /></a>
+        </li>
+        <li class="project-tile">
+          <a href="https://codepen.io/freeCodeCamp/full/wGqEga" target="_blank"
+            ><img
+              class="project-image"
+              src="https://raw.githubusercontent.com/freeCodeCamp/cdn/master/build/testable-projects-fcc/images/wiki.png"
+              alt="project"
+            />
+          </a>
+        </li>
+        <li class="project-tile">
+          <a href="https://codepen.io/freeCodeCamp/full/KzXQgy" target="_blank"
+            ><img
+              class="project-image"
+              src="https://raw.githubusercontent.com/freeCodeCamp/cdn/master/build/testable-projects-fcc/images/tic-tac-toe.png"
+              alt="project"
+          /></a>
+        </li>
+      </ul>
+    </div>
+    <nav id="navbar">
+      <ul>
+        <li><a href="#welcome-section">About</a></li>
+        <li><a href="#projects">Work</a></li>
+        <li><a href="#Contact">Contact</a></li>
+      </ul>
+    </nav>
+    <section id="Contact">
+      <h1>Let's work together...</h1>
+      <p>How do you take your coffee?</p>
+      <ul>
+        <li>
+          <a href="https://www.facebook.com/freecodecamp" target="_blank"
+            >Facebook</a
+          >
+        </li>
+        <li>
+          <a href="https://github.com/freecodecamp" target="_blank">Github</a>
+        </li>
+        <li>
+          <a href="https://twitter.com/freecodecamp" target="_blank">Twitter</a>
+        </li>
+        <li>
+          <a href="mailto:example@example.com" target="_blank">Send a mail</a>
+        </li>
+        <li><a href="tel:555-555-5555" target="_blank">Call me</a></li>
+      </ul>
+    </section>
+    <footer>
+      <p>
+        **This is just a fake portfolio. All the projects and contact details
+        given are not real.
+      </p>
+      <span>© Created for freeCodeCamp </span>
+    </footer>
+  </body>
+</html>
