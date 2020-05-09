@@ -34,6 +34,7 @@
       h1 {
         color: #f0f0f0;
         font-size: 60px;
+        text-align: center;
       }
       h3 {
         color: #be3144;
@@ -54,20 +55,17 @@
       #projects {
         text-align: center;
         background-color: #45567d;
+        height: 200vh;
       }
       .project-image {
         width: 100%;
         height: 350px;
       }
-      #projects-grid {
-        display: grid;
-        grid-gap: 30px;
-        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-        width: 100%;
-      }
       #projects-header {
+        padding-top: 80px;
+        max-width: 640px;
         color: #f0f0f0;
-        font-size: 40px;
+        font-size: 43px;
         border-bottom: 2px solid;
         margin: 0 auto 6rem auto;
       }
@@ -83,9 +81,72 @@
         border-radius: 2px;
         text-decoration: none;
       }
-      .code {
-        color: #181719;
-        transition: orange 0.3;
+      #projects-grid {
+        display: grid;
+        grid-column-gap: 30px;
+        grid-row-gap: 60px;
+        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+        width: 100%;
+        transition: color 0.3;
+        padding-bottom: 70px;
+      }
+      #show-all {
+        color: #f0f0f0;
+        font-size: 30px;
+        text-decoration: none;
+        padding: 9px 30px;
+        background-color: #181719;
+        border-radius: 2px;
+        box-shadow: 1px 1px 1px 1px #181719;
+      }
+      #show-all:hover {
+        background-color: #be3144;
+      }
+      #Contact {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-bottom: 4px solid #be3144;
+        width: 100%;
+        height: 80vh;
+        padding: 0;
+        margin: 0;
+      }
+      #contact-header {
+        line-height: 4px;
+      }
+      #contact-content {
+        color: #f0f0f0;
+        font-size: 24px;
+        text-align: center;
+        font-weight: lighter;
+        font-style: italic;
+      }
+      #social-media ul {
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin: 30px;
+      }
+      #social-media ul li a {
+        text-decoration: none;
+        font-size: 25px;
+        color: #f0f0f0;
+        padding: 30px;
+      }
+      footer {
+        color: #f0f0f0;
+        font-size: 20px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+      }
+      footer p {
+        margin-right: 50px;
       }
     </style>
   </head>
@@ -196,27 +257,56 @@
           </p>
         </a>
       </div>
+      <a href="https://codepen.io/FreeCodeCamp/" id="show-all" target="_blank"
+        >Show all ></a
+      >
     </section>
     <section id="Contact">
-      <h1>Let's work together...</h1>
-      <p>How do you take your coffee?</p>
-      <ul>
-        <li>
-          <a href="https://www.facebook.com/freecodecamp" target="_blank"
-            >Facebook</a
-          >
-        </li>
-        <li>
-          <a href="https://github.com/freecodecamp" target="_blank">Github</a>
-        </li>
-        <li>
-          <a href="https://twitter.com/freecodecamp" target="_blank">Twitter</a>
-        </li>
-        <li>
-          <a href="mailto:example@example.com" target="_blank">Send a mail</a>
-        </li>
-        <li><a href="tel:555-555-5555" target="_blank">Call me</a></li>
-      </ul>
+      <div id="contact-header">
+        <h1>Let's work together...</h1>
+        <p id="contact-content">How do you take your coffee?</p>
+      </div>
+      <div id="social-media">
+        <ul>
+          <li>
+            <a
+              href="https://www.facebook.com/freecodecamp"
+              target="_blank"
+              class="contact-details"
+              >Facebook</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://github.com/freecodecamp"
+              target="_blank"
+              class="contact-details"
+              >Github</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://twitter.com/freecodecamp"
+              target="_blank"
+              class="contact-details"
+              >Twitter</a
+            >
+          </li>
+          <li>
+            <a
+              href="mailto:example@example.com"
+              target="_blank"
+              class="contact-details"
+              >Send a mail</a
+            >
+          </li>
+          <li>
+            <a href="tel:555-555-5555" target="_blank" class="contact-details"
+              >Call me</a
+            >
+          </li>
+        </ul>
+      </div>
     </section>
     <footer>
       <p>
